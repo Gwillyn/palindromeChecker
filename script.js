@@ -20,6 +20,7 @@ function checking() {
     } else {
       result.innerHTML = `<span class="bold">${input.value}</span> is <span class="bold">not</span> a palindrome!`
     }
+    result.style.display = 'block'
   }
 }
 
