@@ -1,9 +1,24 @@
 * {
   cursor: default;
+  
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(-50deg, rgb(10, 35, 55), rgb(6, 19, 34));
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 header {
   text-align: center;
+  color: white;
+  font-size: 30px;
+}
+header p {
+  font-size: 20px;
+  margin-top: -53px;
+  margin-left: -440px;
 }
 main {
   display: flex;
@@ -11,24 +26,33 @@ main {
 }
 
 #inputContainer {
-  margin: 0 auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 400px;
-  border: 1px solid green;
+  /* border: 1px solid #9a4700; */
   text-align: center;
   padding: 10px;
+  color:white;
+  font-size: 30px;
+  
+  
+}
+
+#inputContainer p {
+  font-family:'Courier New', Courier, monospace
 }
 
 input {
   border: none;
   height: 30px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #9a4700;
   cursor: text;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
+  border-radius: 10px;
 }
 
 input:focus {
-  border: 1.5px solid darkgreen;
+  border: 1.5px solid #6c3301;
   border-radius: 10px;
 }
 
@@ -39,29 +63,47 @@ button {
 }
 
 button:hover {
-  background-color: green;
+  background-color: #9a4700;
   border-color: grey
 }
 
 button:active {
-background-color: darkgreen;
+background-color: #6c3301;
 }
 
 #palindromeDef {
   width: 300px;
-  margin: 20px auto 0 auto;
-  background-color: green;
+  margin: 100px auto 0 auto;
+  background-color: #9a4700;
   padding: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   cursor: default;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px;
+  
 }
 #result {
-  font-size: 16px;
-  margin-top: 15px;
+  display: none;
+  font-size: 20px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
 margin-bottom: 10px;
+background-color: #9a4700;
+color: black;
+width: 200px;
+border-radius: 10px;
+box-shadow: 10px 10px 5px;
+font-family:'Courier New', Courier, monospace
 }
 
 .bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 678px) {
+  header p {
+    display: none;
+  }
 }
